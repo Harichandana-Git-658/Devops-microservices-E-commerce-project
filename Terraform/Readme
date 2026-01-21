@@ -1,1 +1,43 @@
+This folder contains Terraform code to provision complete AWS infrastructure required for the microservices e-commerce application.
 
+Infrastructure includes:
+
+VPC
+Public & Private Subnets
+Internet Gateway & NAT
+EKS Cluster
+IAM Roles
+Security Groups
+
+All resources are created using Terraform modules for reusability and clean code structure.
+
+What This Creates:
+
+✅ Custom VPC
+✅ EKS Cluster inside VPC
+✅ Node Groups
+✅ IAM roles for EKS
+✅ Networking components
+✅ Security Groups
+
+🚀 How to Deploy:
+cd terraform
+terraform init
+terraform plan
+terraform apply
+
+🧠 Design Decisions
+
+Used Terraform modules for:
+Reusability
+Clean structure
+Easier maintenance
+EKS is deployed in private subnets
+Only LoadBalancer is public
+
+📈 Benefits
+
+Fully automated infrastructure
+No manual AWS console work
+Reproducible environment
+Production-like setup
