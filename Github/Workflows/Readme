@@ -1,1 +1,22 @@
+📌 Overview
 
+This folder contains CI pipeline YAML for:
+Building Java application
+Creating Docker image
+Pushing image to container registry
+
+⚙️ CI Workflow
+
+Developer pushes code to GitHub
+GitHub Actions triggers pipeline
+Pipeline:
+  Builds Java app
+  Builds Docker image
+  Pushes image to registry
+
+Why CI is Needed:
+
+Automates build process
+Prevents manual mistakes
+Ensures consistent images
+Saves time (~70% faster deployments)
